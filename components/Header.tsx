@@ -3,11 +3,12 @@ import Button from "./Button";
 import Link from "next/link";
 import { useSelector } from "react-redux";
 import { addressShort } from "../utils/utils";
+import { State } from "../pages/time/store";
 
 export default function Header() {
   const router = useRouter();
-  const myAddress = useSelector((state) => state.account);
-  const network = useSelector((state) => state.network);
+  const myAddress = useSelector<State, string>((state) => state.account);
+  const network = useSelector<State, { chainId?: string }>((state) => state.network);
 
   return (
     <div>
