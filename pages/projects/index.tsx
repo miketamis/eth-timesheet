@@ -8,7 +8,7 @@ import Button from "../../components/Button";
 import Input from "../../components/Input";
 import { msToHhmm } from "../../utils/durationFormat";
 
-function Project({ address }: { address: string }) {
+function ProjectCard({ address }: { address: string }) {
   const project = useSelector<State, Project>(
     (state) => state.projects[address]
   );
@@ -143,7 +143,7 @@ function ProjectsList() {
       <div className="mx-auto w-full lg:w-9/12 max-w-xl">
         <div className="py-4">
           {projects.map((project) => (
-            <Project address={project}></Project>
+            <ProjectCard address={project}></ProjectCard>
           ))}
         </div>
         <div className="flex">
