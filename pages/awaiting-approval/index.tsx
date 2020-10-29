@@ -7,7 +7,7 @@ import { addressEqual } from "../../utils/addressEqual";
 import createProjectContractInstance from "../../utils/createProjectContractInstance";
 import { msToHhmm } from "../../utils/durationFormat";
 import { addressShort, DAYS_TO_MS } from "../../utils/utils";
-import store, { Project, State, TimeEntry } from "../time/store";
+import store, { Project, State, TimeEntry } from "../../utils/store";
 
 function TableData(props: HTMLProps<any>) {
   return <td {...props} className={`border px-4 py-2 ${props.className}`} />;

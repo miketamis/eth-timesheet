@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Button from "../../components/Button";
 import { Provider, useSelector } from "react-redux";
-import store, { Project, State, TimeEntry } from "./store";
+import store, { Project, State, TimeEntry } from "../../utils/store";
 
 import Header from "../../components/Header";
 import createProjectContractInstance from "../../utils/createProjectContractInstance";
@@ -36,7 +36,7 @@ var ID = () => {
   return web3.utils.randomHex(32);
 };
 
-function TimeEntry({ id, currentDate }: { id: string; currentDate: Date }) {
+function TimeEntryRow({ id, currentDate }: { id: string; currentDate: Date }) {
   const timeEntry = useSelector<State, TimeEntry>(
     (state) => state.timeEntries[id]
   );
@@ -152,7 +152,7 @@ function DayList({ currentDate }: { currentDate: Date }) {
     <div className="mx-auto w-full max-w-xl">
       <div>
         {timeEntryIds.map((timeEntryId: string) => (
-          <TimeEntry currentDate={currentDate} id={timeEntryId} />
+          <TimeEntryRow currentDate={currentDate} id={timeEntryId} />
         ))}
       </div>
       {!account && (

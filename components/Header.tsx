@@ -3,7 +3,7 @@ import Button from "./Button";
 import Link from "next/link";
 import { useSelector } from "react-redux";
 import { addressShort } from "../utils/utils";
-import { State } from "../pages/time/store";
+import { State } from "../utils/store";
 
 export default function Header() {
   const router = useRouter();

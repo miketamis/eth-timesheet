@@ -2,7 +2,7 @@ import Web3 from "web3";
 import { createStore, applyMiddleware, compose } from "redux";
 import createSagaMiddleware from "redux-saga";
 import persistState from "redux-localstorage";
-import CONTRACT_ADDRESS from "../../contract-address";
+import CONTRACT_ADDRESS from "../contract-address";
 
 import { rootSaga } from "./sagas";
 

@@ -1,8 +1,8 @@
 import { format, setDay } from "date-fns";
-import { addDays, eachDayOfInterval } from "date-fns/esm";
+import { addDays, eachDayOfInterval } from "date-fns";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { useTabState } from "reakit/ts";
+import { useTabState } from "reakit";
 import { dateFormat } from "../utils/utils";
 import Button from "./Button";
 

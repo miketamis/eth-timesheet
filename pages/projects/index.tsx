@@ -3,7 +3,7 @@ import { Provider, useSelector } from "react-redux";
 import Header from "../../components/Header";
 import createProjectContractInstance from "../../utils/createProjectContractInstance";
 import genericComponentFactory from "../../utils/genericComponentFactory";
-import store, { Project, State } from "../time/store";
+import store, { Project, State } from "../../utils/store";
 import Button from "../../components/Button";
 import Input from "../../components/Input";
 import { msToHhmm } from "../../utils/durationFormat";

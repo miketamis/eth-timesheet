@@ -1,7 +1,7 @@
 import { eventChannel } from "redux-saga";
 import { call, cancelled, put, take, fork, select } from "redux-saga/effects";
-import createProjectContractInstance from "../../utils/createProjectContractInstance";
-import { web3 } from "../../utils/web3";
+import createProjectContractInstance from "./createProjectContractInstance";
+import { web3 } from "./web3";
 
 function* contractSaga(contractAddress: string, fromBlock: number) {
   const chan = yield call(channel, contractAddress, fromBlock);
