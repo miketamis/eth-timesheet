@@ -13,7 +13,7 @@ function TableData(props: HTMLProps<any>) {
   return <td {...props} className={`border px-4 py-2 ${props.className}`} />;
 }
 
-function Project({ address }: { address: string }) {
+function ProjectGroup({ address }: { address: string }) {
   const contract = createProjectContractInstance(address);
 
   const timeEntries = useSelector<State, TimeEntry[]>((state) =>
@@ -99,7 +99,7 @@ function ProjectList() {
   return (
     <div className="p-4">
       {projects.map((project) => (
-        <Project address={project} />
+        <ProjectGroup address={project} />
       ))}
     </div>
   );
