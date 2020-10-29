@@ -8,14 +8,34 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.4.0",
+    "@types/classnames": "^2.2.11",
+    "@types/luxon": "^1.25.0",
+    "@types/react-redux": "^7.1.9",
+    "@types/redux-localstorage": "^1.0.8",
+    "classnames": "^2.2.6",
+    "date-fns": "^2.16.1",
+    "format-duration": "^1.3.1",
+    "luxon": "^1.25.0",
     "next": "latest",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.2.2",
+    "reakit": "^1.2.5",
+    "recoil": "^0.0.13",
+    "redux-localstorage": "^0.4.1",
+    "redux-saga": "^1.1.3",
+    "web3": "^1.3.0"
   },
   "devDependencies": {
+    "@openzeppelin/contracts": "^3.2.0",
+    "@truffle/hdwallet-provider": "^1.1.1",
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.1.2",
+    "tailwindcss": "^1.9.6",
     "typescript": "4.0"
   },
   "license": "MIT"
